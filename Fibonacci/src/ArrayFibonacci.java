@@ -7,9 +7,11 @@ public class ArrayFibonacci {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 	
 		long n = Long.parseLong(br.readLine());
-		long result = fibo_arr(n);
 		
-		System.out.println("N번째 피보나치 수:" + result);
+		for(int i = 0; i <= n; i++) {
+			long result = fibo_arr(i);
+			System.out.println(i + "번째 피보나치 수:" + result);
+		}
 	}
 	
 	public static long fibo_arr(long n) {
@@ -19,9 +21,6 @@ public class ArrayFibonacci {
 		
 		for(int i = 2; i <= n; i++) {
 			arr[i] = arr[i-1] + arr[i-2];
-		}
-		for(int i = 0; i <= n; i++) {
-			System.out.println(arr[i]);
 		}
 		
 		return arr[(int) n];
