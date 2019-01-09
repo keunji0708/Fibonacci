@@ -10,7 +10,7 @@ public class ArrayFibonacci {
 		
 		for(int i = 0; i <= n; i++) {
 			long result = fibo_arr(i);
-			System.out.println(i + "¹øÂ° ÇÇº¸³ªÄ¡ ¼ö:" + result);
+			System.out.println(i + "ë²ˆì§¸ í”¼ë³´ë‚˜ì¹˜ ìˆ˜:" + result);
 		}
 	}
 	
