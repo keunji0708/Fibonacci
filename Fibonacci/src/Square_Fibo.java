@@ -30,7 +30,7 @@ public class Square_Fibo {
 			return A;
 		}
 		if(N % 2 == 0) {
-			return pow(A, N / 2);
+			return pow(mul(A, A), N / 2);
 		}
 		else {
             return mul(A, pow(mul(A, A), N / 2));
@@ -43,7 +43,7 @@ public class Square_Fibo {
 		Fibo_array[0] = A[0] * B[0] + A[1] * B[2];
 		Fibo_array[1] = A[0] * B[1] + A[1] * B[3];
 		Fibo_array[2] = A[2] * B[0] + A[3] * B[2];
-		Fibo_array[3]= A[2] * B[1] + A[3] * B[3];
+		Fibo_array[3] = A[2] * B[1] + A[3] * B[3];
 
 		return Fibo_array;
 	}
